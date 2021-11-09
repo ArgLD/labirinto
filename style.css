@@ -1,0 +1,133 @@
+body {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    background-color: black;
+    font-family: 'Chango', cursive;
+}
+
+.line {
+    display: flex;
+}
+
+.start {
+    background-color: rgb(248, 248, 248);
+}
+
+.end {
+    background-color: rgb(94, 172, 80);
+}
+
+.cell {
+    width: 25px;
+    height: 25px;
+    display: flex;      
+}
+
+.passage {
+    background-color: black;
+}
+
+.wall {
+    background-color: grey;
+}
+
+.player {
+    animation-duration: 100ms;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-image: url("luke25px.png");        
+}
+
+h1 {
+    margin:10px 10px;         
+    color: white;
+    text-align: center;
+}
+ h2 {
+   margin:10px 10px; 
+   color: rgb(81, 127, 202);
+   text-align: center;
+ }
+
+ p {
+   margin: 10px 10px;
+   color: azure;
+   text-align: center;
+ }
+div .polling_message{
+    margin: auto;
+}
+
+.polling_message {
+    color: white;
+    float: left;
+    margin-right: 2%;
+}
+  
+.view_port {
+    display: flex;
+    background-color: black;
+    height: 30px;
+    width: 100%;
+    overflow: hidden;
+    margin: 10px;
+}
+  
+.cylon_eye {    
+    color: white;
+    height: 100%;
+    width: 20%;
+  
+    -webkit-animation: 3s linear 0s infinite alternate move_eye;
+            animation: 4s linear 0s infinite alternate move_eye;
+}
+
+.view_port_footer {
+    display: block;
+    background-color: black;
+    height: 30px;
+    width: 100%;
+    overflow: hidden;
+    margin: 10px
+}
+
+  .cylon_eye_footer {
+    background-color: rgb(0, 132, 255);
+    background-image: linear-gradient(to right,
+        rgba(0, 0, 0, .9) 25%,
+        rgba(0, 0, 0, .1) 50%,
+        rgba(0, 0, 0, .9) 75%);
+    color: white;
+    height: 100%;
+    width: 20%;
+  
+    -webkit-animation: 4s linear 0s infinite alternate move_eye;
+            animation: 4s linear 0s infinite alternate move_eye;
+  }
+  
+  @-webkit-keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+          @keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+
+  @media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+        background-image: url("star-wars-backgrounds-26.jpg");
+    }   
+    
+    .cell {
+        width: 40px;
+        height: 40px;
+        display: flex;      
+    }    
+   
+    .player {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        background-image: url("luke40px.png");        
+    }   
+  }
